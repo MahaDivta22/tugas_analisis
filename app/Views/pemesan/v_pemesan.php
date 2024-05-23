@@ -50,6 +50,7 @@
                                         <td> NO HP </td>
                                         <td> Total Harga </td>
                                         <td> Status </td>
+                                        <td> Bulan </td>
                                         <td> AKSI </td>
                                     </tr>
                                 </thead>
@@ -65,8 +66,10 @@
                                             <td><?= $pemesan['no_hp']; ?> </td>
                                             <td><?= $pemesan['total_harga']; ?> </td>
                                             <td><?= $pemesan['status']; ?> </td>
+                                            <td><?= $pemesan['created_at']; ?> </td>
                                             <td style="text-align: center;">
-                                                <button type="button" class="btn btn-sm btn-warning edit-data" data-toggle="modal" data-target="#edit" data-id_pemesanan="<?= $pemesan['id_pemesanan'] ?>" data-nama_barang="<?= $pemesan['nama_barang'] ?>" data-nama_pemesan="<?= $pemesan['nama_pemesan'] ?>" data-alamat="<?= $pemesan['alamat'] ?>" data-no_hp="<?= $pemesan['no_hp'] ?>" data-total_harga="<?= $pemesan['total_harga'] ?>" data-status="<?= $pemesan['status'] ?>">
+                                                <button type="button" class="btn btn-sm btn-warning edit-data" data-toggle="modal" data-target="#edit" data-id_pemesanan="<?= $pemesan['id_pemesanan'] ?>" data-nama_barang="<?= $pemesan['nama_barang'] ?>" data-nama_pemesan="<?= $pemesan['nama_pemesan'] ?>" data-alamat="<?= $pemesan['alamat'] ?>" data-no_hp="<?= $pemesan['no_hp'] ?>" data-total_harga="<?= $pemesan['total_harga'] ?>" data-status="<?= $pemesan['status'] ?>"
+                                                data-create_at="<?= $pemesan['created_at'] ?>">
                                                     <i class="fa fa-edit"> Edit</i></button> |
 
                                                 <button type="button" class="btn btn-sm btn-danger hapus-data" data-toggle="modal" data-target="#hapus" data-id_pemesanan="<?= $pemesan['id_pemesanan'] ?>"><i class="fa fa-trash"> Hapus</i></button>

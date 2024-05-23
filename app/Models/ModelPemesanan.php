@@ -12,7 +12,7 @@
         protected $returnType       = 'array';
         protected $protectFields    = true;
         protected $allowedFields    = [
-           "id_pemesanan", "id_produk" ,"nama_pemesan", "alamat", "no_hp", "total_harga", "status"];
+           "id_pemesanan", "id_produk" ,"nama_pemesan", "alamat", "no_hp", "total_harga", "status", "created_at"];
 
             //dates
             protected $useTimestamps          = false;

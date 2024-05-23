@@ -54,6 +54,7 @@ class Pemesanan extends BaseController
             $phone = $this->request->getVar('phoneNumber');
             $total = $this->request->getVar('totalhargaa');
             $Statuss = $this->request->getVar('Status');
+            $create = $this->request->getVar('Created_at');
             $data = [
                 'id_pemesanan' => $Idd_l,
                 // 'id_produk' => $Id_p,
@@ -62,7 +63,8 @@ class Pemesanan extends BaseController
                 'alamat' => $Address, 
                 'no_hp' => $phone,
                 'total_harga' => $total,
-                'status' => $Statuss
+                'status' => $Statuss,
+                'create_at' => $create
             ];
         //    dd($data);
             $pemesans = new ModelPemesanan();
